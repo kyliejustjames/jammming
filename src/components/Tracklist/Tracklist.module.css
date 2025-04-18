@@ -1,0 +1,10 @@
+.trackList {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default list styling */
+  }
+  
+  .trackList li{
+    margin-bottom: 1rem;
+  }
+  

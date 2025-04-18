@@ -1,0 +1,66 @@
+.track {
+    display: flex;
+    justify-content: space-between; /* Space between track info and button */
+    align-items: center; /* Vertically center items */
+    padding: 1rem;
+    border-bottom: 1px solid #444; /* Separator line */
+    color: #fff;
+  }
+  
+  .trackInfo {
+    flex: 1; /* Take up available space */
+    margin-right: 1rem; /* Add some space to the right */
+  }
+  
+  .trackName {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .trackArtistAlbum {
+    font-size: 0.8rem;
+    color: #aaa; /* Lighter text for artist/album */
+  }
+  
+  .trackButton {
+    border: none;
+    background-color: transparent; /* Transparent background */
+    cursor: pointer;
+    font-size: 1.5rem; /* Large + or - */
+    padding: 0.25rem;
+    transition: color 0.2s ease; /* Smooth transition */
+  }
+  
+  .addButton {
+    color: #68ed85; /* Green for add */
+  }
+  
+  .addButton:hover {
+    color: #40c060; /* Darker green on hover */
+  }
+  
+  .removeButton {
+    color: #ff4d4d; /* Red for remove */
+  }
+  
+  .removeButton:hover {
+    color: #cc0000; /* Darker red on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .track {
+      flex-direction: column; /* Stack info and button on small screens */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .trackInfo {
+      margin-bottom: 1rem; /* Add space below info on small screens */
+      margin-right: 0;
+    }
+  
+    .trackButton {
+      margin-left: auto; /* Push button to the right on small screens */
+    }
+  }
+  
