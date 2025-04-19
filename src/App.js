@@ -59,7 +59,6 @@ function App() {
             onNameChange={handleNameChange}
           />
         </div>
-        <button onClick={savePlaylist}>Save To Spotify</button>
       </div>
     </div>
   );

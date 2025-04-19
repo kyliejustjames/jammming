@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import styles from './SearchBar.module.css';
 
 function SearchBar({ onSearch }) {
-  const [term, setTerm] = useState(''); // 'setTerm' is now used
-
+  const [term, setTerm] = useState(''); 
   const handleTermChange = (event) => {
     setTerm(event.target.value);
   };
 
   const handleSearch = (event) => {
     event.preventDefault();
-    onSearch(term); // 'term' is used here
+    onSearch(term); 
   };
 
   return (

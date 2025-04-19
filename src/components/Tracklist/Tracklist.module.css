@@ -1,7 +1,7 @@
 .trackList {
     padding: 0;
     margin: 0;
-    list-style: none; /* Remove default list styling */
+    list-style: none; 
   }
   
   .trackList li{

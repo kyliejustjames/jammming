@@ -3,7 +3,7 @@ import TrackList from '../Tracklist/Tracklist';
 import styles from './Playlist.module.css';
 
 function Playlist({ playlist, onRemoveTrack, onNameChange, onSavePlaylist }) {
-  const [name, setName] = useState(playlist?.name || ''); // Use optional chaining and a default value
+  const [name, setName] = useState(playlist?.name || ''); 
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -18,7 +18,7 @@ function Playlist({ playlist, onRemoveTrack, onNameChange, onSavePlaylist }) {
         className={styles.playlistNameInput}
         placeholder="Playlist Name"
       />
-      {playlist && ( // Conditionally render TrackList
+      {playlist && ( 
         <TrackList
           tracks={playlist.tracks}
           onRemoveTrack={onRemoveTrack}
