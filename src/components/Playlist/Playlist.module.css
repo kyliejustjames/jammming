@@ -1,35 +1,48 @@
 
 
 .playlist {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 1rem;
-    background-color: #023047;
+    background-color: #335c67;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: #fff;
+    display: flex;
+    text-align: center;
+
+    max-width: 800px; 
+    margin: 20px auto;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    justify-content: center;
   }
   
   .playlistNameInput {
-    width: 95%;
+    width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ffb703;
     border-radius: 5px;
-    background-color: #023047;
-    color: #ffb703;
+    background-color: #94d2bd;
+    color: #001219;
+    justify-content: center;
+    margin: 20px 20px;
   }
   
   .playlistSaveButton {
-    background-color: #219ebc;
-    color: #023047;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ffb703;
+    border-radius: 5px;
+    background-color: #94d2bd;
+    color: #001219;
+    justify-content: center;
+    margin: 20px 20px;
   }
   
   .playlistSaveButton:hover {
-    background-color: #fb8500;
+    background-color: #0a9396;
   }

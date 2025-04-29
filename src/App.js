@@ -89,11 +89,11 @@ function App() {
       <div className="App-playlist">
         <SearchBar onSearch={searchSpotify} />
         <div className="App-results">
-          <SearchResults searchResults={searchResults} onAdd={addTrack} />
+          <SearchResults searchResults={searchResults} onAddTrack={addTrack} />
           <Playlist
             playlistName={playlistName}
             playlistTracks={playlistTracks}
-            onRemove={removeTrack}
+            onRemoveTrack={removeTrack}
             onNameChange={handleNameChange}
           />
         </div>

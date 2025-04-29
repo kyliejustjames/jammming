@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import TrackList from '../Tracklist/Tracklist';
 import styles from './Playlist.module.css';
 
-function Playlist({ playlist, onRemoveTrack, onNameChange, onSavePlaylist }) {
-  const [name, setName] = useState(playlist?.name || ''); 
+function Playlist({ playlistTracks, onRemoveTrack, onNameChange, onSavePlaylist }) {
+  const [name, setName] = useState('New Playlist' || ''); 
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -18,9 +18,9 @@ function Playlist({ playlist, onRemoveTrack, onNameChange, onSavePlaylist }) {
         className={styles.playlistNameInput}
         placeholder="Playlist Name"
       />
-      {playlist && ( 
+      {playlistTracks && ( 
         <TrackList
-          tracks={playlist.tracks}
+          tracks={playlistTracks}
           onRemoveTrack={onRemoveTrack}
           isRemoval={true}
         />
